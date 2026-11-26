@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Student Dashboard | ISBAT</title>
+    <link rel="stylesheet" href="portal.css" />
+    <style>
+      .quick-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+      }
+      .quick-links a {
+        display: block;
+        background: white;
+        border: 1px solid #d5d8e2;
+        border-radius: 8px;
+        padding: 24px;
+        text-decoration: none;
+        color: #25283d;
+        font-weight: bold;
+      }
+      @media (max-width: 750px) {
+        .quick-links {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHAHbSE3845v0G_s1MoHsR7mISdAYWKpt1JwnfG2KNFA&s=10" alt="ISBAT University" />
+      <h2>Amara Namusoke</h2>
+      <nav>
+        <a href="dashboard.html">Dashboard</a
+        ><a href="courses.html">My Courses</a
+        ><a href="fees.html">Fee Statement</a>
+      </nav>
+    </aside>
+    <main class="main">
+      <div class="topline">
+        <div>
+          <h1>Welcome, Amara Namusoke</h1>
+          <p>Wednesday, 25 November 2026</p>
+        </div>
+        <span class="badge" style="background: #eaf3de; color: #27500a"
+          >Active</span
+        >
+      </div>
+      <section class="metrics">
+        <article class="metric">GPA<strong>3.72</strong></article>
+        <article class="metric">Credit Hours<strong>18</strong></article>
+        <article class="metric">
+          Outstanding Fee Balance<strong>UGX 450,000</strong>
+        </article>
+      </section>
+      <h2>Quick Links</h2>
+      <section class="quick-links">
+        <a href="dashboard.html">Dashboard</a
+        ><a href="courses.html">My Courses</a
+        ><a href="fees.html">Fee Statement</a
+        ><a href="#profile">Update Profile</a>
+      </section>
+    </main>
+  </body>
+</html>
